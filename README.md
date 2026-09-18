@@ -10,37 +10,37 @@ A identidade visual do projeto utiliza o conceito de dois bebês e uma temática
 
 O objetivo é desenvolver progressivamente uma loja virtual enquanto são estudados conceitos de desenvolvimento web. O projeto será construído em etapas, permitindo acompanhar sua evolução desde uma página HTML básica até versões com estilização, responsividade e programação.
 
-## 📌 Versão atual — 1.0
+## 📌 Versão atual — 2.0
 
-A versão atual utiliza somente HTML.
+A versão atual utiliza HTML5 semântico para organizar melhor a estrutura da página e demonstrar o uso das tags mais relevantes da linguagem.
 
 Objetivos desta etapa:
 
-- praticar a estrutura básica de um documento HTML;
-- organizar conteúdos utilizando `div`;
-- trabalhar hierarquia de títulos;
-- utilizar parágrafos e quebras de linha;
-- inserir imagens;
-- criar links;
-- utilizar tags de formatação e ênfase;
-- compreender a diferença entre estrutura, apresentação e comportamento de uma página web.
+- praticar a estrutura semântica do HTML5;
+- utilizar corretamente `header`, `nav`, `main`, `section`, `article`, `aside` e `footer`;
+- organizar a navegação em listas HTML;
+- promover uma hierarquia clara de títulos;
+- apresentar uma tabela estruturada com dados do catálogo;
+- manter a identidade do projeto acadêmico e os elementos já estudados na versão anterior.
 
-**HTML:** utilizado nesta versão.  
-**CSS:** ainda não utilizado.  
-**JavaScript:** ainda não utilizado.
+**Tecnologia utilizada:**
+- HTML5
+
+**CSS e JavaScript continuam como tecnologias futuras.**
 
 ## Funcionalidades simuladas
 
-A versão 1.0 possui:
+A versão 2.0 mantém:
 
 - identificação da loja;
-- vitrine de produtos;
-- quatro produtos fictícios;
-- detalhamento de um produto;
+- navegação interna por seções;
+- vitrine de produtos com quatro itens;
+- destaque do Kit Presente Recém-Nascido;
 - simulação de carrinho através de âncoras HTML;
-- informações e atendimento fictícios no rodapé.
+- informações e atendimento fictícios no rodapé;
+- organização semântica e acessível do conteúdo.
 
-O carrinho ainda não possui lógica real. Ele serve apenas para simular a navegação entre partes da página utilizando HTML.
+O carrinho continua sem lógica real. Ele serve apenas para simular a navegação entre partes da página utilizando HTML.
 
 ## Estrutura
 
@@ -72,7 +72,7 @@ Para visualizar o projeto:
 ## Roadmap acadêmico
 
 - [x] Versão 1.0 — HTML básico e estrutura do e-commerce
-- [ ] Versão 2.0 — HTML5 semântico e organização dos dados
+- [x] Versão 2.0 — HTML5 semântico e organização dos dados
 - [ ] Versão 3.0 — CSS e identidade visual
 - [ ] Versão 4.0 — Layout responsivo com Flexbox/Grid
 - [ ] Versão 5.0 — Formulários e checkout

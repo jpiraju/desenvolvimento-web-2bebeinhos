@@ -9,112 +9,164 @@
     <!--
         Projeto 2bebeinhos
         Disciplina: Desenvolvimento Web
-        Versão 1.0 - HTML Base
+        Versão 2.0 - HTML5 Semântico
     -->
 
-    <!-- 1. Identificação da loja / cabeçalho -->
-    <div>
+    <!-- HEADER: representa o cabeçalho principal da página e reúne a identidade da loja. -->
+    <header id="inicio">
         <h1>2bebeinhos</h1>
         <p>Presentes para celebrar os pequenos grandes momentos.</p>
 
-        <!-- Futuramente, esta imagem deverá ser substituída pelo logo definitivo da loja. -->
         <img src="img/logo-2bebeinhos.png" alt="Logo da loja 2bebeinhos">
 
         <p><strong>Carinho em cada detalhe para tornar cada presente inesquecível.</strong></p>
-        <hr>
-    </div>
 
-    <!-- 2. Vitrine de produtos -->
-    <div id="produtos">
-        <h2>Produtos em Destaque</h2>
+        <!-- NAV: representa a navegação principal da página com links internos. -->
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#destaque">Destaque</a></li>
+                <li><a href="#carrinho">Carrinho</a></li>
+                <li><a href="#atendimento">Atendimento</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- Produto 1: Kit Presente Recém-Nascido -->
-        <div>
-            <h3>Kit Presente Recém-Nascido</h3>
-            <img src="img/produtos/kit-recem-nascido.png" alt="Kit presente para recém-nascido">
-            <p>Um conjunto delicado com itens essenciais para receber o bebê com muito carinho. Inclui uma <i>embalagem especial</i>.</p>
-            <p>Preço: <span>R$ 129,90</span> - <b>À vista no PIX</b></p>
-            <a href="#carrinho">Simular Adicionar ao Carrinho</a>
-        </div>
+    <!-- MAIN: concentra o conteúdo principal da loja, separando as áreas de destaque e atendimento. -->
+    <main>
 
-        <!-- Produto 2: Body Bebê Pequenos Momentos -->
-        <div>
-            <h3>Body Bebê "Pequenos Momentos"</h3>
-            <img src="img/produtos/body-pequenos-momentos.png" alt="Body de bebê Pequenos Momentos">
-            <p>Body confortável de algodão, perfeito para registrar os <i>pequenos momentos</i> do dia a dia.</p>
-            <p>Preço: <span>R$ 49,90</span> - <b>À vista no PIX</b></p>
-            <a href="#carrinho">Simular Adicionar ao Carrinho</a>
-        </div>
+        <!-- SECTION: representa uma área temática da página de produtos. -->
+        <section id="produtos" aria-labelledby="titulo-produtos">
+            <h2 id="titulo-produtos">Produtos em Destaque</h2>
 
-        <!-- Produto 3: Manta Bebê Conforto -->
-        <div>
-            <h3>Manta Bebê Conforto</h3>
-            <img src="img/produtos/manta-bebe-conforto.png" alt="Manta confortável para bebê">
-            <p>Manta macia e aconchegante para manter o bebê aquecido em momentos de <i>aconchego</i>.</p>
-            <p>Preço: <span>R$ 79,90</span> - <b>À vista no PIX</b></p>
-            <a href="#carrinho">Simular Adicionar ao Carrinho</a>
-        </div>
+            <!-- ARTICLE: representa cada produto como um conteúdo independente dentro da vitrine. -->
+            <article>
+                <h3>Kit Presente Recém-Nascido</h3>
+                <img src="img/produtos/kit-recem-nascido.png" alt="Kit presente para recém-nascido">
+                <p>Um conjunto delicado com itens essenciais para receber o bebê com muito carinho. Inclui uma <em>embalagem especial</em>.</p>
+                <p>Preço: <strong>R$ 129,90</strong> - <b>À vista no PIX</b></p>
+                <a href="#carrinho">Simular Adicionar ao Carrinho</a>
+            </article>
 
-        <!-- Produto 4: Kit Hora do Banho -->
-        <div>
-            <h3>Kit Hora do Banho</h3>
-            <img src="img/produtos/kit-hora-do-banho.png" alt="Kit de produtos para a hora do banho do bebê">
-            <p>Itens escolhidos para deixar a hora do banho mais prática, divertida e <i>especial</i>.</p>
-            <p>Preço: <span>R$ 89,90</span> - <b>À vista no PIX</b></p>
-            <a href="#carrinho">Simular Adicionar ao Carrinho</a>
-        </div>
-    </div>
+            <article>
+                <h3>Body Bebê "Pequenos Momentos"</h3>
+                <img src="img/produtos/body-pequenos-momentos.png" alt="Body de bebê Pequenos Momentos">
+                <p>Body confortável de algodão, perfeito para registrar os <em>pequenos momentos</em> do dia a dia.</p>
+                <p>Preço: <strong>R$ 49,90</strong> - <b>À vista no PIX</b></p>
+                <a href="#carrinho">Simular Adicionar ao Carrinho</a>
+            </article>
 
-    <!-- 3. Detalhamento do produto principal -->
-    <div>
-        <h4>Detalhes do Produto em Destaque</h4>
-        <p>O Kit Presente Recém-Nascido reúne itens úteis e delicados para celebrar a chegada de um bebê. <em>Montado com carinho e pronto para presentear.</em></p>
-        <p>
-            1 Body de algodão<br>
-            1 Manta para bebê<br>
-            1 Par de meias<br>
-            1 Naninha<br>
-            Embalagem para presente<br>
-        </p>
-    </div>
+            <article>
+                <h3>Manta Bebê Conforto</h3>
+                <img src="img/produtos/manta-bebe-conforto.png" alt="Manta confortável para bebê">
+                <p>Manta macia e aconchegante para manter o bebê aquecido em momentos de <em>aconchego</em>.</p>
+                <p>Preço: <strong>R$ 79,90</strong> - <b>À vista no PIX</b></p>
+                <a href="#carrinho">Simular Adicionar ao Carrinho</a>
+            </article>
 
-    <!-- 4. Carrinho de compras -->
-    <div id="carrinho">
-        <h5>Meu Carrinho de Compras</h5>
-        <p>Kit Presente Recém-Nascido - R$ 129,90</p>
-        <p>Quantidade: 1</p>
-        <p>Total estimado: R$ 129,90</p>
-        <a href="#">Finalizar Compra</a>
-        <br>
-        <a href="#produtos">Continuar Comprando</a>
-    </div>
+            <article>
+                <h3>Kit Hora do Banho</h3>
+                <img src="img/produtos/kit-hora-do-banho.png" alt="Kit de produtos para a hora do banho do bebê">
+                <p>Itens escolhidos para deixar a hora do banho mais prática, divertida e <em>especial</em>.</p>
+                <p>Preço: <strong>R$ 89,90</strong> - <b>À vista no PIX</b></p>
+                <a href="#carrinho">Simular Adicionar ao Carrinho</a>
+            </article>
+        </section>
 
-    <!-- 5. Informações da loja / rodapé -->
-    <div>
-        <h6>Políticas e Atendimento</h6>
-        <p>
-            <a href="#">Termos de Uso</a><br>
-            <a href="#">Política de Privacidade</a><br>
-            <a href="#">Instagram</a><br>
-            <a href="#">Fale Conosco</a>
-        </p>
+        <!-- SECTION: destaque principal da loja, com informações específicas do produto mais importante. -->
+        <section id="destaque" aria-labelledby="titulo-destaque">
+            <h2 id="titulo-destaque">Produto em Destaque</h2>
+            <article>
+                <h3>Kit Presente Recém-Nascido</h3>
+                <p>O Kit Presente Recém-Nascido reúne itens úteis e delicados para celebrar a chegada de um bebê. <em>Montado com carinho e pronto para presentear.</em></p>
+
+                <p>O conjunto inclui:</p>
+                <ul>
+                    <li>1 Body de algodão</li>
+                    <li>1 Manta para bebê</li>
+                    <li>1 Par de meias</li>
+                    <li>1 Naninha</li>
+                    <li>Embalagem para presente</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- SECTION: demonstra organização de dados em tabela, mantendo a informação em formato estruturado. -->
+        <section aria-labelledby="titulo-resumo">
+            <h2 id="titulo-resumo">Resumo dos produtos</h2>
+            <table>
+                <caption>Resumo dos produtos da 2bebeinhos</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Categoria</th>
+                        <th scope="col">Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kit Presente Recém-Nascido</td>
+                        <td>Presentes para recém-nascido</td>
+                        <td>R$ 129,90</td>
+                    </tr>
+                    <tr>
+                        <td>Body Bebê "Pequenos Momentos"</td>
+                        <td>Roupas</td>
+                        <td>R$ 49,90</td>
+                    </tr>
+                    <tr>
+                        <td>Manta Bebê Conforto</td>
+                        <td>Acessórios</td>
+                        <td>R$ 79,90</td>
+                    </tr>
+                    <tr>
+                        <td>Kit Hora do Banho</td>
+                        <td>Cuidados</td>
+                        <td>R$ 89,90</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- ASIDE: informação complementar, sem ser o conteúdo principal da página. -->
+        <aside>
+            <h2>Dica para presentear</h2>
+            <p>Para um presente especial para recém-nascido, escolha itens que tenham uso cotidiano e um toque acolhedor, como mantas, roupinhas e kits de cuidados.</p>
+        </aside>
+
+        <!-- SECTION: mantém a simulação do carrinho de forma semântica. -->
+        <section id="carrinho" aria-labelledby="titulo-carrinho">
+            <h2 id="titulo-carrinho">Meu Carrinho de Compras</h2>
+            <p>Kit Presente Recém-Nascido - R$ 129,90</p>
+            <p>Quantidade: 1</p>
+            <p>Total estimado: R$ 129,90</p>
+            <a href="#">Finalizar Compra</a>
+            <br>
+            <a href="#produtos">Continuar Comprando</a>
+        </section>
+    </main>
+
+    <!-- FOOTER: representa o rodapé da página e reúne atendimento e políticas. -->
+    <footer id="atendimento">
+        <h2>Políticas e Atendimento</h2>
+        <nav aria-label="Atendimento e políticas">
+            <ul>
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Fale Conosco</a></li>
+            </ul>
+        </nav>
+
         <p>Copyright © 2026 2bebeinhos.</p>
         <p>CNPJ fictício para atividade acadêmica: 00.000.000/0001-00</p>
-    </div>
+    </footer>
 
-    <!-- Checklist da atividade:
-        [ ] div
-        [ ] h1 até h6
-        [ ] p
-        [ ] br
-        [ ] hr
-        [ ] img
-        [ ] a
-        [ ] b
-        [ ] i
-        [ ] span
-        [ ] strong
-        [ ] em
+    <!--
+        Observação didática:
+        Níveis de títulos (h1, h2, h3...) representam hierarquia de conteúdo e acessibilidade,
+        e não servem apenas para definir tamanho visual.
     -->
 </body>
 </html>

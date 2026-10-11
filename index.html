@@ -9,7 +9,7 @@
     <!--
         Projeto 2bebeinhos
         Disciplina: Desenvolvimento Web
-        Versão 2.0 - HTML5 Semântico
+        Versão 3.0 - Formulários GET e POST
     -->
 
     <!-- HEADER: representa o cabeçalho principal da página e reúne a identidade da loja. -->
@@ -31,6 +31,23 @@
                 <li><a href="#atendimento">Atendimento</a></li>
             </ul>
         </nav>
+
+            <!-- Formulário GET: demonstra uma busca interna usando parâmetros na URL. -->
+            <form action="index.html" method="get">
+                <label for="busca">Buscar produto:</label>
+                <input type="search" name="q" id="busca" placeholder="Digite o produto...">
+
+                <label for="categoria">Categoria:</label>
+                <select name="categoria" id="categoria">
+                    <option value="todos">Todos os produtos</option>
+                    <option value="kits">Kits de presente</option>
+                    <option value="roupinhas">Roupinhas</option>
+                    <option value="mantas">Mantas e acessórios</option>
+                    <option value="higiene">Higiene e cuidados</option>
+                </select>
+
+                <button type="submit">Buscar</button>
+            </form>
     </header>
 
     <!-- MAIN: concentra o conteúdo principal da loja, separando as áreas de destaque e atendimento. -->
@@ -196,6 +213,72 @@
             <a href="#">Finalizar Compra</a>
             <br>
             <a href="#produtos">Continuar Comprando</a>
+        </section>
+
+        <!-- SECTION: formulário acadêmico de cadastro e checkout pelo método POST. -->
+        <section id="pedido" aria-labelledby="titulo-pedido">
+            <h2 id="titulo-pedido">Cadastro e Finalização do Pedido</h2>
+            <p>Este formulário demonstra o envio de dados pelo método POST. O processamento depende de um servidor ou backend e não realiza uma compra real.</p>
+
+            <form action="processa-pedido.html" method="post">
+                <fieldset>
+                    <legend>Dados pessoais e acesso</legend>
+
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" name="nome" id="nome" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" required>
+
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" required>
+
+                    <label for="nascimento">Data de nascimento:</label>
+                    <input type="date" name="nascimento" id="nascimento">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Detalhes do pedido e entrega</legend>
+
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="number" name="quantidade" id="quantidade" min="1" max="10" value="1">
+
+                    <p>Tipo de frete:</p>
+                    <input type="radio" name="frete" id="frete-padrao" value="padrao" checked>
+                    <label for="frete-padrao">Padrão</label>
+
+                    <input type="radio" name="frete" id="frete-expressa" value="expressa">
+                    <label for="frete-expressa">Expressa</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pagamento e preferências</legend>
+
+                    <label for="pagamento">Forma de pagamento:</label>
+                    <select name="pagamento" id="pagamento" required>
+                        <option value="" disabled selected>Selecione a forma de pagamento</option>
+                        <option value="pix">Pix</option>
+                        <option value="cartao">Cartão de Crédito</option>
+                        <option value="boleto">Boleto</option>
+                    </select>
+
+                    <input type="checkbox" name="termos" id="termos" value="aceito" required>
+                    <label for="termos">Aceito os termos de uso</label>
+
+                    <input type="checkbox" name="ofertas" id="ofertas" value="sim">
+                    <label for="ofertas">Desejo receber ofertas por e-mail</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Observações</legend>
+
+                    <label for="observacoes">Observações do pedido:</label>
+                    <textarea name="observacoes" id="observacoes" rows="4" cols="40" placeholder="Ponto de referência, instruções de entrega..."></textarea>
+                </fieldset>
+
+                <button type="submit">Finalizar Pedido</button>
+                <button type="reset">Limpar Formulário</button>
+            </form>
         </section>
     </main>
 

@@ -12,15 +12,18 @@ O objetivo é desenvolver progressivamente uma loja virtual enquanto são estuda
 
 ## 📌 Versão atual — 2.0
 
-A versão atual utiliza HTML5 semântico para organizar melhor a estrutura da página e demonstrar o uso das tags mais relevantes da linguagem.
+A versão atual utiliza HTML5 semântico para organizar melhor a estrutura da página e demonstrar o uso das tags mais relevantes da linguagem. A entrega foi concluída após a adição e o teste local dos vídeos reais.
 
 Objetivos desta etapa:
 
 - praticar a estrutura semântica do HTML5;
 - utilizar corretamente `header`, `nav`, `main`, `section`, `article`, `aside` e `footer`;
 - organizar a navegação em listas HTML;
+- utilizar listas não ordenadas para categorias e listas ordenadas para instruções;
 - promover uma hierarquia clara de títulos;
 - apresentar uma tabela estruturada com dados do catálogo;
+- comparar especificações de produtos em uma segunda tabela;
+- utilizar vídeo HTML5 com formatos MP4 e WebM;
 - manter a identidade do projeto acadêmico e os elementos já estudados na versão anterior.
 
 **Tecnologia utilizada:**
@@ -50,7 +53,7 @@ O carrinho continua sem lógica real. Ele serve apenas para simular a navegaçã
 ├── index.html
 ├── README.md
 │
-└── img/
+├── img/
 	├── logo-2bebeinhos.png
 	│
 	└── produtos/
@@ -58,7 +61,13 @@ O carrinho continua sem lógica real. Ele serve apenas para simular a navegaçã
 		├── body-pequenos-momentos.png
 		├── manta-bebe-conforto.png
 		└── kit-hora-do-banho.png
+
+└── videos/
+	├── 2bebeinhos-apresentacao.webm
+	└── 2bebeinhos-apresentacao.mp4
 ```
+
+Os arquivos MP4 e WebM estão disponíveis na pasta `videos/` e foram testados localmente em um navegador.
 
 ## Como executar
 
@@ -69,10 +78,12 @@ Para visualizar o projeto:
 3. Abra o arquivo `index.html` em um navegador.
 4. Não é necessário instalar dependências ou utilizar um servidor nesta versão.
 
+Para validar a reprodução dos vídeos, abra o `index.html` por um servidor local ou pela extensão Live Server.
+
 ## Roadmap acadêmico
 
 - [x] Versão 1.0 — HTML básico e estrutura do e-commerce
-- [x] Versão 2.0 — HTML5 semântico e organização dos dados
+- [x] Versão 2.0 — HTML5 semântico, listas, tabelas comparativas e vídeo demonstrativo
 - [ ] Versão 3.0 — CSS e identidade visual
 - [ ] Versão 4.0 — Layout responsivo com Flexbox/Grid
 - [ ] Versão 5.0 — Formulários e checkout
@@ -97,3 +108,16 @@ As imagens utilizadas no projeto têm finalidade de composição visual do exerc
 - CSS3
 - JavaScript
 - demais tecnologias previstas pela disciplina, conforme evolução do projeto
+
+## Checklist da V2.0
+
+- [x] Estrutura com elementos semânticos do HTML5
+- [x] Navegação principal com `nav`, `ul`, `li` e links internos
+- [x] Produtos organizados em `article`
+- [x] Categorias em lista não ordenada
+- [x] Passos para escolher um presente em lista ordenada
+- [x] Tabela de catálogo preservada
+- [x] Tabela comparativa de especificações adicionada
+- [x] Vídeo MP4 adicionado
+- [x] Vídeo WebM adicionado
+- [x] Reprodução do vídeo testada em navegador
